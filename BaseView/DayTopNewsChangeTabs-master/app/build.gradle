@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "com.example.mjj.daytopnewschangetabs"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.androidkun:pulltorefreshrecyclerview:1.0.9'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile files('D:/xuexi/7/BaseView/DayTopNewsChangeTabs-master/.idea/libraries/SocialSDK_QQ_Simplify.jar')
+    compile files('D:/xuexi/7/BaseView/DayTopNewsChangeTabs-master/.idea/libraries/umeng_social_api.jar')
+    compile files('D:/xuexi/7/BaseView/DayTopNewsChangeTabs-master/.idea/libraries/umeng_social_net.jar')
+    compile files('D:/xuexi/7/BaseView/DayTopNewsChangeTabs-master/.idea/libraries/umeng_social_tool.jar')
+}
